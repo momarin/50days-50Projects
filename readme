@@ -4,8 +4,13 @@
 
 # by @bradtraversy & @florinpop17, available in UDEMY, 2025;
 
-- 01 Expanding Cards 🗂️
+- 01 🗂️ Expanding Cards 
   ● cards with expand or shrink effect on click;
-- 02
-- 03
+- 02 👣 Progress Steps 
+  ● progress bar that starts at one and goes along;
+  ● bar border color changes on click;
+  ● div progress is the blue line that has the transition;
+  ● function to turn buttons on and off;
+- 03 
+
 
