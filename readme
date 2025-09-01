@@ -13,7 +13,10 @@
   ● function to turn buttons on and off;
 - 03 🧭 Rotating Navigation
   ● Rotating page on click;
-- 04
+- 04 🔍 Hidden Search Widget
+  ● search button that triggers an event in JS on click;
+- 05
+
 
 
 
