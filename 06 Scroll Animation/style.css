@@ -1,0 +1,46 @@
+/* Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a29c9b;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+h1 {
+  margin: 10px;
+}
+.box {
+  background-color: #511c29;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(
+    300%
+  ); /* for the animation, use the transform property with translateX because we want these to move along the X axis */
+  transition: transform 0.4s ease;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+.box.show {
+  transform: translateX(0);
+}
+.box h2 {
+  font-size: 45px;
+}
