@@ -15,7 +15,13 @@
   ● Rotating page on click;
 - 04 🔍 Hidden Search Widget
   ● search button that triggers an event in JS on click;
-- 05
+- 05 🌫️ Blurry Loading
+  ● scale function in https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers;
+- 06 📜 Scroll Animation
+  ● for other animations use animate on scroll library in:
+    ● https://michalsnik.github.io/aos/
+    ● https://htmlstream.com/preview/front-v3.2/documentation/aos.html
+
 
 
 
