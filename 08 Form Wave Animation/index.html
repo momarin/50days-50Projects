@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome min -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+
+    <title>Form Input Wave</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form Input Wave</h1>
+      <form>
+        <!-- input login -->
+        <div class="form-control">
+          <input type="text" required />
+          <label>Email</label>
+          <!-- add by JS -->
+          <!-- <label>
+            <span style="transition-delay: 0ms">E</span>
+            <span style="transition-delay: 50ms">m</span>
+            <span style="transition-delay: 100ms">a</span>
+            <span style="transition-delay: 150ms">i</span>
+            <span style="transition-delay: 200ms">l</span>
+          </label> -->
+        </div>
+        <!-- input password -->
+        <div class="form-control">
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <!-- login button -->
+        <button class="btn">Login</button>
+        <p class="text">Don't have an account? <a href="">Click here</a></p>
+      </form>
+    </div>
+  </body>
+</html>
