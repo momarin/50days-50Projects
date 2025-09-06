@@ -23,7 +23,20 @@
     ● https://htmlstream.com/preview/front-v3.2/documentation/aos.html
 - 07 📄 Split Landing Page
   ● split animation with javascript;
-- 08
+- 08 🌊 Form Wave Animation 📝
+  ● Creating a visual effect where each letter of a form label is wrapped in an individual <span> tag, allowing for letter-by-letter animations;
+- 09 🔊 Sound Board
+- 10 👴 Dad Jokes
+  ● fetch API https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API to make HTTP request API https://icanhazdadjoke.com/api;
+  ● .then and async await;
+  ● using Postman;
+    > GET: means you`re getting data of getting something from the server;
+    > POST: use when you are submitting data;
+    > PUT: used for updating data;
+    > PATCH: also used for updating data;
+    > DELETE: delete data on the server;
+- 11
+
 
 
 
