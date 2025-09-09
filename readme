@@ -35,7 +35,17 @@
     > PUT: used for updating data;
     > PATCH: also used for updating data;
     > DELETE: delete data on the server;
-- 11
+- 11 🔑 Event Key Codes
+  ● shows the key code and the code for any key on keyboard;
+  ● based on JS keycodes;
+- 12 📝 FAQ Collapse
+  ● coloring and positioning icons;
+  ● inserting icons via css;
+  ● opening and closing question tabs;
+  ● https://dribbble.com/;
+  ● https://dribbble.com/shots/3967265-FAQ;
+- 13
+
 
 
 
