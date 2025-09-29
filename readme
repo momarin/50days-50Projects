@@ -64,6 +64,14 @@
 - 18 🌆 Background Slider
   ● arrow buttons;
   ● responsiv;
+- 19 🕰️ Theme Clock
+  ● https://dribbble.com/shots/5958443-Alarm-clock;
+  ● scale function in https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers;
+- 20 🖲️ Button Ripple Effect
+  ● give a specific class of ripple to diferent buttons;
+  ● use of animation prop;
+  ● @keyframes;
+
 
 
 
