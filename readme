@@ -71,6 +71,22 @@
   ● give a specific class of ripple to diferent buttons;
   ● use of animation prop;
   ● @keyframes;
+- 21 ⬇️ Drag & Drop
+  ● drag the picture on the box and drop on another;
+  ● hover efect when moving picture;
+- 22 🖌️ Drawing App
+  ● drawing app using HTML5 <canvas> element;
+  ● const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "green";
+    ctx.fillRect(10, 10, 150, 100);
+- 23 🔻 Kinetic CSS Loader
+  ● animation;
+  ● keyframes;
+  ● a unique way to customize loading page with css keyframes;
+- 24 📝 Content Placeholder
+  ● gradient animation to loading content;
 
 
 
