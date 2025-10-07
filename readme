@@ -87,6 +87,14 @@
   ● a unique way to customize loading page with css keyframes;
 - 24 📝 Content Placeholder
   ● gradient animation to loading content;
+- 25 📌 Sticky Navbar
+  ● changing color and sticking navbar at the top of the screen;
+  ● applying an overlay to highlight the text over the image; 
+  ● example of right use of z-index;
+  ● adjusting the @media;
+- 26 ↕️ Double Vertical Slider
+  ● Araras *Macaw* vertical slider;
+   > left side move up, right side move down;
 
 
 
