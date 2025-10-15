@@ -1,0 +1,70 @@
+/* Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+/* -------------- Universal -------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+/* -------------- Button -------------- */
+.button {
+  background-color: #f5f5f5;
+  font-family: inherit;
+  font-weight: bold;
+  color: #0d0d0d;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.15);
+}
+.button:focus {
+  outline: none;
+}
+.button:active {
+  transform: scale(0.98);
+}
+.button:hover {
+  color: darkcyan;
+}
+/* -------------- Toasts Classe -------------- */
+.toasts {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.toast {
+  background-color: #f5f5f5;
+  color: #0d0d0d;
+  width: 185px;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.15);
+}
+.toast.info {
+  color: lightskyblue;
+}
+.toast.success {
+  color: lightgreen;
+}
+.toast.danger {
+  color: darkgoldenrod;
+}
+.toast.error {
+  color: darkred;
+}

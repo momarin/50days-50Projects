@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+/* -------------- Universal -------------- */
+:root {
+  --bg-color: #a5a5a5;
+  --card-color: #ededed;
+  --text-color: #0e0e0e;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+/* -------------- User Form -------------- */
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: var(--card-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--text-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.15);
+}
+.user-form input:focus {
+  outline: none;
+}
+/* -------------- Card -------------- */
+.card {
+  max-width: 800px;
+  background-color: var(--card-color);
+  border-radius: 20px;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+.avatar {
+  border-radius: 50%;
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.26);
+  height: 150px;
+  width: 150px;
+}
+.avatar-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* -------------- User Info -------------- */
+.user-info {
+  color: var(--text-color);
+  margin-left: 2rem;
+}
+.user-info h2 {
+  margin-top: 0;
+}
+.user-info ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  max-width: 400px;
+}
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.repositorie {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Media Querie */
+@media (max-width: 600px) {
+  .user-form {
+    max-width: 500px;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
