@@ -95,6 +95,19 @@
 - 26 ↕️ Double Vertical Slider
   ● Araras *Macaw* vertical slider;
    > left side move up, right side move down;
+- 27 🍞 Toast Notification
+  ● notifying users of any important information;
+  ● pop-up;
+  ● disappears after a while;
+  ● multiple notifications;
+- 28 👩🏽 GitHub Profiles
+  ● using github API to fetch users using AXIOS
+    > get profile data;
+      > username;
+      > users repos;
+    > display in a card;
+    > second request to get the user`s latest N repositories;
+    > axios is a promise based HTTP client for the browser and node.js;
 
 
 
