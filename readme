@@ -108,6 +108,12 @@
     > display in a card;
     > second request to get the user`s latest N repositories;
     > axios is a promise based HTTP client for the browser and node.js;
+- 29 💗 Double Heart Click
+  ● heart appearing on click with grow effect;
+  ● EventListener double click "(dblclick)";
+  ● custom double click with new Date() DateConstructor;
+- 30 📃 Auto Text Effect
+  ● input properties
 
 
 
