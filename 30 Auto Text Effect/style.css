@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap");
+/* -------------- Universal -------------- */
+:root {
+  --bg-color: #22181c;
+  --text-color: #f6e8ea;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Playwrite HU", cursive;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+/* -------------- Speed Container -------------- */
+.speed-container {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+.speed {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+}
+.speed:focus {
+  outline: none;
+}
