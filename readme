@@ -114,6 +114,18 @@
   ● custom double click with new Date() DateConstructor;
 - 30 📃 Auto Text Effect
   ● input properties
+- 31 🔑 Password Generator
+  ● multiple choice of characters
+  ● copy function
+  ● use of String Object fromCharCode() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+  ● https://www.w3schools.com/charsets/ref_html_ascii.asp
+  ● Object in DOM
+  ● OBS!!! event using clipboard API;
+- 32 ☑️ Good, Cheap and Fast checkbox
+  ● change appearence of checkbox;
+  ● sliding the ball from the checkbox on the x-axis;
+  ● keyframes;
+  ● translate, transform, animation css props;
 
 
 
