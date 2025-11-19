@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Montserrat&display=swap");
+
+/* -------------- Universal -------------- */
+:root {
+  --bg-color: #fff0df;
+  --check-color: #f2c27b;
+  --checked-color: #3e1916;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Faculty Glyphic", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+/* -------------- Main classes -------------- */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  width: 200px;
+}
+.toggle {
+  visibility: hidden; /* escondendo a checkbox */
+}
+.label {
+  display: inline-block;
+  position: relative;
+  background-color: var(--check-color);
+  border-radius: 50px;
+  width: 80px;
+  height: 40px;
+  margin: 0 15px 0;
+  cursor: pointer;
+}
+.ball {
+  background-color: var(--bg-color);
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  align-items: center;
+  justify-content: center;
+  animation: slideOff 0.3s linear forwards;
+}
+.toggle:checked + .label {
+  background-color: var(--checked-color);
+}
+.toggle:checked + .label .ball {
+  animation: slideOn 0.3s linear forwards;
+}
+/* -------------- Keyframes -------------- */
+/* a prop scale está alterando o tamanho da bolinha na animação */
+@keyframes slideOn {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    transform: translateX(40px) scale(1);
+  }
+}
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px) scale(1);
+  }
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+/* -------------- Universal -------------- */
+:root {
+  --bg-color: #395e66;
+  --result-container: #387d7a;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-color);
+  color: #f0f0f0;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px;
+}
+/* -------------- Universal Tags -------------- */
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+span {
+  color: #20353a;
+}
+/* -------------- Container -------------- */
+.container {
+  background-color: var(--result-container);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+/* -------------- Result Container -------------- */
+.result-container {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+.result-container .result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+/* -------------- Buttons -------------- */
+.btn {
+  border: none;
+  background-color: var(--bg-color);
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.clipboard {
+  color: #fff;
+}
+.btn-large {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+}
+.result-container .btn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+/* -------------- Settings -------------- */
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.75rem 0;
+}
