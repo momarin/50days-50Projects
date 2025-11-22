@@ -126,6 +126,16 @@
   ● sliding the ball from the checkbox on the x-axis;
   ● keyframes;
   ● translate, transform, animation css props;
+- 33 📝 Notes App
+  ● create, edit, delete note;
+  ● Local Storage;
+  ● stringfying objects;
+  ● localStorage.clear() for cleaning everything;
+  ● localStorage =/= sessionStorage --> the second clears when the browser is closed;
+- 34 🕒 Animated Countdown
+  ● JS to check conditions and either add ou remover certain classes based on those conditions;
+  ● https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform-origin;
+
 
 
 
