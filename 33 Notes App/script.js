@@ -1,0 +1,73 @@
+import { marked } from "https://cdnjs.cloudflare.com/ajax/libs/marked/16.3.0/lib/marked.esm.js";
+/* ------------------------ DOM ELEMENTS ------------------------ */
+const addBtn = document.querySelector(".add");
+const notes = JSON.parse(localStorage.getItem("notes"));
+/* ------------------------ FUNCTIONS ------------------------ */
+if (notes) {
+  notes.forEach((note) => addNewNote(note));
+}
+
+// add notes
+function addNewNote(text) {
+  const note = document.createElement("div");
+  note.classList.add("note");
+  note.innerHTML = `
+    <div class="tools">
+        <button class="edit"><i class="fas fa-edit"></i></button>
+        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+    </div>
+    <div class="main ${text ? "" : "hidden"}"></div>
+    <textarea class="${text ? "hidden" : ""}"></textarea>
+  `;
+
+  const editBtn = note.querySelector(".edit");
+  const deleteBtn = note.querySelector(".delete");
+  const main = note.querySelector(".main");
+  const textArea = note.querySelector("textarea");
+
+  textArea.value = text;
+  main.innerHTML = marked(text);
+
+  //   deleteBtn
+  deleteBtn.addEventListener("click", () => {
+    note.remove();
+    updateLS();
+  });
+  //   editBtn
+  editBtn.addEventListener("click", () => {
+    main.classList.toggle("hidden");
+    textArea.classList.toggle("hidden");
+  });
+
+  //   alterando texto no edit
+  textArea.addEventListener("input", (e) => {
+    const { value } = e.target;
+    main.innerHTML = marked(value);
+    updateLS();
+  });
+
+  document.body.appendChild(note);
+}
+
+// updating Local Storage
+function updateLS() {
+  const notesText = document.querySelectorAll("textarea");
+  const notes = [];
+  notesText.forEach((note) => notes.push(note.value));
+  console.log(notes);
+
+  localStorage.setItem("notes", JSON.stringify(notes));
+}
+/* ------------------------ EVENT LISTENERS ------------------------ */
+addBtn.addEventListener("click", () =>
+  addNewNote("Clique no botão de editar e escreva aqui...")
+);
+/* ------------------------ Local Storage ------------------------ */
+// localStorage.setItem("name", "Marina");
+// localStorage.getItem("name");
+// localStorage.removeItem("name");
+
+// STRINGFYING OBJECTS
+// localStorage.setItem("name", JSON.stringify());
+// JSON.parse(localStorage.getItem("name"));
+// localStorage.removeItem("name");

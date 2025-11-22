@@ -1,0 +1,72 @@
+/* Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+/* -------------- Universal -------------- */
+:root {
+  --bg-body: #78b3ce;
+  --add-btn: #f96e2a;
+  --bg-note: #fbf8ef;
+  --text-color: #fbf8ef;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-body);
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 3rem;
+}
+/* -------------- Note -------------- */
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-family: inherit;
+  background-color: var(--add-btn);
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+.note {
+  background-color: var(--bg-note);
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  height: 400px;
+  width: 400px;
+}
+.note .tools {
+  background-color: var(--add-btn);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  background-color: var(--bg-note);
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+.main {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.hidden {
+  display: none;
+}
