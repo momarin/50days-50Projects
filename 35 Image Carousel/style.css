@@ -1,0 +1,55 @@
+/* Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* -------------- Universal -------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+/* -------------- TAGS -------------- */
+img {
+  width: 330px;
+  height: 500px;
+  object-fit: cover;
+}
+/* -------------- CLASSES -------------- */
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 530px;
+  width: 330px;
+  overflow: hidden;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  background-color: rgb(4, 53, 99);
+  color: #f0f0f0;
+  font-weight: bold;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+  opacity: 0.8;
+}
+.btn:hover {
+  opacity: 1;
+}
+.btn:focus {
+  outline: none;
+}
