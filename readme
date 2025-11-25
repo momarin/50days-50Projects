@@ -135,6 +135,14 @@
 - 34 🕒 Animated Countdown
   ● JS to check conditions and either add ou remover certain classes based on those conditions;
   ● https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform-origin;
+- 35 🎠 Image Carousel
+  ● carousel using translate: transform;
+  ● click event on prev and next buttons;
+- 36 🌈 Rainbow Hoverboard
+  ● hover to paint the board;
+  ● color fading with CSS transition;
+  ● rainbow palette: https://colorkit.co/palette/ffadad-ffd6a5-fdffb6-caffbf-9bf6ff-a0c4ff-bdb2ff-ffc6ff/;
+
 
 
 
